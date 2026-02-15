@@ -1,0 +1,21 @@
+name: zanjiexiangwang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zanjiexiangwang
+        env:
+          afq52: ${{ secrets.afq52 }}
+        run: |
+          echo $afq52 | jq -r .gju17 | /bin/bash
+          echo $ok0 | jq -r .krp7927 | /bin/bash
+          echo $yljp085 | jq -r .bvxe84442 | /bin/bash
+          echo $bnzek91 | jq -r .q2 | /bin/bash
+          echo $afzs3133 | jq -r .z504 | /bin/bash
+
